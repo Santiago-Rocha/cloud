@@ -6,4 +6,11 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/Santiago-Rocha/cloud.git
+          search-paths: config-data
+          username: ${GITHUB_USER}
+          password: ${GITHUB_PASSOWRD}
+  security:
+    user:
+      name: root
+      password: p4s5wd
